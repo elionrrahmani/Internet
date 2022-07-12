@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#logo {
+  transform: rotateX(-15deg);
+}
+
+.innerList {
+  display: none;
+}
+.listItem {
+  border: 1px solid rgb(231, 107, 107);
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(224, 117, 141);
+}
+
+.listItem:hover {
+  animation: bgAnimation 4s infinite;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-color: rgb(224, 117, 141);
+  }
+  50% {
+    background-color: rgb(226, 88, 118);
+  }
+  75% {
+    background-color: rgb(223, 67, 101);
+  }
+  100% {
+    background-color: rgb(224, 131, 152);
+  }
+}
+
+.more-btn {
+  margin-top: 5px;
+  padding: 7px;
+  color: white;
+  background-color: rgb(150, 122, 117);
+  border: none;
+}
+.body {
+  background-color: whitesmoke;
+  
+}
+
+.foods {
+  display: flex;
+  justify-content: space-around;
+}
+
+.foodList {
+  width: 300px;
+  border: 1px dotted darkred;
+  padding-bottom: 20px;
+  list-style-type: square;
+  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dailyFoodWrapper {
+  width: 100%;
+  padding: 50px 60px;
+  box-sizing: border-box;
+}
+
+.specificFood {
+  border: 1px dotted darkred;
+  display: flex;
+}
+
+.specificFood > img:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
+}
+
+.accordion {
+  width: 100% !important;
+  background: none;
+  border: none;
+  text-align: left;
+}
+.panel {
+  display: none;
+}
+
+.menuFoods {
+  margin-top: 10px;
+  border: 1px dotted rgb(114, 45, 45);
+  padding: 80px 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.foodCard {
+  width: 300px;
+  margin-bottom: 50px;
+  margin: 35px;
+}
+
+.foodCard > img {
+  width: 300px;
+}
+
+.foodCard:hover > img {
+  transform: rotate(5deg);
+}
+
+#bestSelling:hover {
+  transform: rotateY(320deg);
+}
+
+iframe{
+  margin:20px;
+}
+
+.specialOffer {
+  transform: perspective(750px) translate3d(0px, 0px, -150px) rotateX(27deg)
+    scale(0.9, 0.9);
+  border-radius: 20px;
+  border: 5px solid #e6e6e6;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-in-out transform;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.specialOffer > h3 {
+  color: #383838;
+}
+
+.specialOffer:hover {
+  transform: translate3d(0px, 0px, -150px);
+}

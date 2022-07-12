@@ -1,0 +1,385 @@
+<!DOCTYPE htlm>
+<html>
+
+<head>
+    <title>Rreth Nesh</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="header-footer.css">
+    <link rel="stylesheet" type="text/css" href="engji.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#teksti").hide();
+            $("#butoniParaqitjes").click(function () {
+                $("#teksti").show('slow', function () {
+                    alert("Tani jeni duke i shikuar informatat e plota")
+                });
+            });
+        });
+        $(document).ready(function () {
+            $("#buttonRemove").click(function () {
+                $("#opsionale").remove();
+            });
+        });
+
+
+    </script>
+
+    <style>
+        .background {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://c1.wallpaperflare.com/preview/45/42/493/cooking-kitchen-process-restaurant.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            margin-top: 200px;
+        }
+
+        .h1 {
+            position: center;
+            color: white;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .font {
+            color: black;
+            position: relative;
+            margin-top: 45px;
+            margin-bottom: 80px;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .Border {
+            margin-top: 200px;
+        }
+
+        .map {
+            margin-top: 150px;
+            margin-bottom: 200px;
+        }
+
+        .location {
+            margin-left: 300px;
+
+        }
+
+        #map1 {
+            margin-left: 300px;
+        }
+
+        button {
+            display: inline-block;
+            background-color: #4bd838;
+            border-radius: 10px;
+            border: 4px double #cccccc;
+            color: #eeeeee;
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+            width: 250px;
+
+        }
+    
+        #map1{
+            margin-left:300px;
+        }
+        .location {
+            margin-left: 300px;
+        display: inline-block;
+        background-color: #4bd838;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        width: 250px;
+     
+      }
+    </style>
+</head>
+
+<body>
+    <nav class="topnav">
+        <a class="active" href="engjiaboutus.html">Rreth Nesh</a>
+        <a href="eni.loginFrom.html">eKuzhina</a>
+        <a href="elion.kuzhina.html">Kuzhina</a>
+        <a href="engjihome.html">Faqja Kryesore</a>
+
+        <svg height="45" width="300">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:white;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:black;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <ellipse cx="50" cy="35" rx="44" ry="26" fill="url(#grad1)" />
+            <text fill="#ffffff" font-size="30" font-family="Verdana" x="25" y="43">Le Bernardin</text>
+        </svg>
+    </nav>
+    <br><br><br>
+
+    <div class="font">
+        <h3 style="text-align:center;Font-size:40px;color:rgb(0, 0, 0);">Historia e Resturantit Le Bernardin
+        </h3>
+
+        <p style="Font-size:15px;color:rgb(0, 0, 0);">Le Bernardin &euml;sht&euml; një restorant francez me
+            ushqim deti në Midtown Manhatan në <abbr title="New York City">NYC</abbr>.
+            Gilbert Le Coze dhe motra e tij Maguy Le Coze
+            filloi restorantin në Paris <a href="#123h">Faleminderit Stafit tonë </a> në vitin 1972, ku u quajt Les
+            Moines de St. Bernardin. Ata rifilluan restorantin në Nju Jork në
+            1986, jo shumë kohë pasi mori një yll të tretë Michelin.</p>
+        <p style="Font-size:15px;color:rgb(0, 0, 0);">Në udhëzuesit Zagat 2012-2014, 2016 dhe 2017, Le Bernardin
+            është emëruar <span style="color: rgb(0, 0, 0);background-color: rgb(255, 255, 255);">restoranti më
+                popullor në qytet </span> dhe në guidat 2015–2017, është vlerësuar gjithashtu si
+            restoranti më i mirë i qytetit për shërbim. Revista New York gjithashtu e vlerësoi Le Bernardin #1 në
+            renditjen e saj vjetore të
+            101 restorantet më të mira në New York City në 2006.</p>
+        <p>Disa foto të vjetra të Le Bernardinit!</p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="images/5.jpg" alt="Snow" style="width:490px; height:400px;">
+        </div>
+        <div class="column">
+            <img src="images/6.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="images/bern4.jpg" alt="Mountains" style="width:100%">
+        </div>
+    </div>
+    <div class="background">
+        <br><br><br><br><br><br>
+        <p class="h1">Orari Yn&euml;</p>
+        <table style="width:100%;padding:3%">
+            <tr>
+                <th>
+                </th>
+                <th colspan="8" , style="color:rgb(250, 250, 250);"><i>
+                        Dit&euml; e Pun&euml;s
+                    </i>
+                </th>
+            </tr>
+            <tr style="height:25px"></tr>
+            <th>
+
+            </th>
+            <th style="color:rgb(250, 250, 250);"><i>E H&euml;n&euml;</i></th>
+            <th style="color:rgb(250, 250, 250);"><i>E Mart&euml;</i></th>
+            <th style="color:rgb(250, 250, 250);"><i>E M&euml;rkur&euml;</i></th>
+            <th style="color:rgb(250, 250, 250);"><i>E Enjte</i></th>
+            <th style="color:rgb(250, 250, 250);"><i>E Premte</i></th>
+            <th style="color:rgb(250, 250, 250);"><i>E Shtun&euml;</i></th>
+            <th style="color:rgb(250, 250, 250);"><i>E Diel&euml;</i></th>
+            </tr>
+            <tr style="height:25px"></tr>
+            <th style="color:rgb(250, 250, 250);"><i>M&euml;ngjesi</i></th>
+            <th>
+            </th>
+            <th colspan="8" , style="color:rgb(250, 250, 250);">
+                Vet&euml;m nga ora 10:00-11:30!
+            </th>
+            </tr>
+            <tr style="height:25px"></tr>
+            <th style="color:rgb(250, 250, 250);"><i> Dreka</i></th>
+            <th>
+            </th>
+            <th colspan="8" , style="color:rgb(250, 250, 250);">
+                Vet&euml;m nga ora 11:30-16:00!
+            </th>
+            </tr>
+            <tr style="height:25px"></tr>
+            <th style="color:rgb(250, 250, 250);"> <i>Darka</i></th>
+            <th>
+            </th>
+            <th colspan="8" , style="color:rgb(250, 250, 250);">
+                Vet&euml;m nga ora 16:00-21:00!
+            </th>
+            </tr>
+            <tr style="height:25px"></tr>
+
+            <th style="color:rgb(250, 250, 250);"><i>Deserti</i></th>
+            <th>
+            </th>
+            <th colspan="8" , style="color:rgb(250, 250, 250);">
+                Vet&euml;m nga ora 21:00-00:00!
+            </th>
+            </tr>
+        </table>
+    </div>
+
+    <br><br><br>
+    <section>
+        <fieldset class="Border">
+            <div style="display: flex;">
+                <div>
+                    <img src="images/kushi11.jpg" alt="Gordon James Ramsay OBE" style=" width:420px;
+                        height:500px;">
+                </div>
+                <div>
+
+                    <p style="Font-size:15px;color:rgb(0, 0, 0);"> <a id="123h"> <b>Albert Krasniqi OBE</b> i lindur më
+                            8 nëntor
+                            1966)<i> është një kuzhinier, restorant, personalitet televiziv dhe shkrimtar
+                                britanik</i>. Ai ka lindur në Johnstone,Skoci dhe u rrit në Stratford-upon-Avon, Angli.
+                            Ramsay themeloi grupin e tij global të restoranteve,
+                            Restorantet Gordon Ramsay, në vitin 1997. Është vlerësuar me 16 yje Michelin në total
+                            dhe aktualisht mban gjithsej shtatë. <u>Pas rritjes së famës në miniserialin televiziv
+                                britanik Boiling Pika në vitin 1999,</u> <mark>Ramsay ishte bërë një nga kuzhinierët më
+                                të njohur dhe më me
+                                ndikim në MB nga 2004.</mark></p>
+                    <p style="Font-size:15px;color:rgb(0, 0, 0);">Ramsay u emërua Oficer i Urdhrit të
+                        Perandoria Britanike (OBE) nga Mbretëresha Elizabeth II në listën e Nderimeve të Vitit
+                        të Ri 2006 për shërbimet ndaj industria e mikpritjes. Në korrik 2006, ai fitoi çmimin Catey për
+                        "Restaurator i pavarur
+                        i Viti", duke u bërë vetëm personi i tretë që ka fituar tre çmime Catey. Në vitin 2020,
+                        Forbes renditi fitimet në 70 milionë dollarë për 12 muajt e mëparshëm dhe e renditën atë në
+                        vendin e
+                        19-të me të ardhurat më të lart personazh i famshëm në botë.</p>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="Border-2">
+            <div style="display: flex;">
+                <div>
+                    <article>
+                        <header>
+                            <p style="Font-size:15px;color:rgb(0, 0, 0);"> <b>Elfaid Cucaj
+                        </header>
+                        <p style="Font-size:15px;color:rgb(0, 0, 0);">
+                            i lindur më 27 maj 1966)</b> është një kuzhinier i famshëm britanik,
+                            personazh televiziv dhe shkrimtar i ushqimit.Blumenthal konsiderohet si një pionier i
+                            gatimit me shumë sensorë, çiftëzimit tëushqimit dhe
+                            kapsulimit të shijes. Ai erdhi në vëmendjen e publikut me receta të pazakonta, të tilla si
+                            akullore me
+                            proshutë dhe vezë,dhe qull kërmilli. E tij janë imituar gjerësisht recetat për patate të
+                            skuqura të gatuara trefish dhe vezë
+                            skoceze me qendër të buta. Ai ka mbrojtur një qasje shkencore për gatimin, për të cilën ai
+                            është vlerësuar me tituj nderi nga
+                            Reading, Bristol dhe universitetet e Londrës dhe u bë anëtar nderi i Shoqërisë Mbretërore të
+                            Kimisë.
+                        </p>
+                        <p style="Font-size:15px;color:rgb(0, 0, 0);">Interesi i tij për gatimin filloi në
+                            moshën gjashtëmbëdhjetë vjeçare në nje pushime familjare në Provence, Francë, kur ai u
+                            dërgua në restorantin me 3 yje
+                            Michelin L'Oustau de Baumanière.<br>  Ai u frymëzua nga cilësia e ushqimit dhe "e gjithë
+                            përvoja
+                            shumëshqisore: zhurma e shatërvanëve dhe cikadave, era marramendëse e livandës, pamja e
+                            kamarierëve
+                            që gdhendin qengjin ne tavolinë”.Kur mësoi të gatuante, ai u ndikua nga seria e librave të
+                            kuzhinës Les
+                            recetes origjinale, me kuzhinierë francezë si Alain Chapel.</br></p>
+                        <p id='teksti'>Në vitin 1995, Blumenthal bleu një
+                            pijetore të rënduar në Bray.Berkshire e quajti The Ringers dhe e rihapi atë si The Fat
+                            Duck.<br> <i>Ai shpejt
+                                fitoi vëmendjen e ushqimit kritikët; Matthew Fort dhe Fay Maschler vlerësuan
+                                gatimin</i> <p id="ndrysho">Blumenthal  përshkroi origjinalin restorant si një "bistro".</p><u> Historianët ndihmuan në zhvillimin
+                                e pjatave të
+                                restorantit nga Receta historike britanike. Darka u nderua me yllin e saj të parë
+                                Michelin në
+                                2012. Ajo u votua e 7-ta restoranti më i mirë në botë në vitin 2013  gjithashtu u votua edhe për qmime ndërkombetare. Ai mori një Yll të
+                                dytë Michelin në
+                                Guide Michelin 2014.</u>
+                               <p> Fjala më e perdorur:</p> <p id="kerko"></p>
+                               
+    
+                        </p>
+                        <button id='butoniParaqitjes'>Lexo me shume</button>
+
+                    </article>
+                </div>
+                <div>
+                    <img src="images/kuzhi2.jpg" style="width:420px;height: 500px;" alt="Heston Marc Blumenthal">
+                </div>
+            </div>
+        </fieldset>
+    </section>
+
+    <div id='opsionale'>
+        <p class="font" style="font-size: 25px; text-align: center;margin-top:150px;">Lokacioni ynë <br>Mos hezitoni të
+            na vizitoni!</p>
+        <div class="map" style="display: flex;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.585258170932!2d21.170527215312934!3d42.648951624801164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec0d5603ad7%3A0x1ba2ce0329d66240!2sRruga%20B%2C%20Prishtin%C3%AB!5e0!3m2!1sen!2s!4v1642166502942!5m2!1sen!2s"
+                width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div>
+                <button class="location" onclick="getlocation()">
+                    Më shtyp për Lokacionin tuaj!
+                </button>
+                <p id="map1"></p>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <button id='buttonRemove'>Largo HARTEN</button>
+    </center>
+
+
+    <script>
+        var variable1 = document.getElementById("map1");
+        function getlocation() {
+            navigator.geolocation.getCurrentPosition(showLoc);
+        }
+        function showLoc(pos) {
+            variable1.innerHTML =
+                "Gjatësia: " +
+                pos.coords.latitude +
+                "<br>Gjërsia: " +
+                pos.coords.longitude;
+        
+        }
+        let text = "Ajo u votua e 7-ta restoranti më i mirë në botë në vitin 2013 gjithashtu u votua edhe për qmime ndërkombetare.";
+let result = text.match(/votua/g);
+document.getElementById("kerko").innerHTML = result;
+
+let str = document.getElementById("ndrysho").innerHTML; 
+let res = str.replace(/Blumenthal/i, "Elfaid Cucaj");
+document.getElementById("ndrysho").innerHTML = res;
+
+    </script>
+    <div class="footer-container">
+        <div class="footer">
+
+            <div class="footer-heading footer-1">
+                <h2>Kontaktoni me ne</h2>
+                <a href='https://www.indeed.com/cmp/Le-Bernardin/reviews' target="_blank">Pun&euml;</a>
+                <a href='Support' target="_blank">Suporti</a>
+                <a href='Sponsorships' target="_blank">Reklamo</a>
+                <a href='Terms of Service' target="_blank">Kushtet e p&euml;rdorimit</a>
+
+            </div>
+
+            <div class="footer-heading footer-2">
+                <h2>Rrjete sociale</h2>
+                <a href='https://www.instagram.com/lebernardinny/?hl=en' target="_blank">Instagram</a>
+                <a href='https://www.facebook.com/LeBernardin' target="_blank">Facebook</a>
+                <a href='https://www.youtube.com/results?search_query=le+bernardin+new+york' target="_blank">Youtube</a>
+            </div>
+
+        </div>
+        <p id="kerko"></p>
+
+
+</body>
+
+</html>

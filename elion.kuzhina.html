@@ -1,0 +1,368 @@
+<html>
+
+<head>
+    <title>Kitchen</title>
+    <link rel="stylesheet" href="./elion.kuzhina.css">
+    <link rel="stylesheet" type="text/css" href="engji.css">
+    <link rel="stylesheet" href="header-footer.css">
+
+    <style>
+        .table {
+            width: 70%;
+            margin: auto;
+            font-size: 21px;
+            border: 3px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-image: url(images/border.png) 30 stretch;
+        }
+
+        .table,
+        th,
+        td {
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #div1,
+        #div2 {
+
+            width: 500px;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+        #zbritje{
+            
+            margin-bottom: 120px;
+        }
+    </style>
+    
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+        
+    </script>
+</head>
+
+<body class="body">
+    <nav class="topnav">
+        <a href="engjiaboutus.html">Rreth Nesh</a>
+        <a href="eni.loginFrom.html">eKuzhina</a>
+        <a class="active" href="elion.kuzhina.html">Kuzhina</a>
+        <a href="engjihome.html">Faqja Kryesore</a>
+        <svg height="45" width="300" id="logo">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:white;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:black;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <ellipse cx="50" cy="35" rx="44" ry="26" fill="url(#grad1)" />
+            <text fill="#ffffff" font-size="30" font-family="Verdana" x="25" y="43">Le Bernardin</text>
+        </svg>
+    </nav>
+
+    <div class="Video1">
+        <video class="video-bg1" autoplay muted loop>
+            <source src="images/3.mp4">
+        </video>
+    </div>
+
+    <div class="font">
+        <h1 id="eee" style="text-align: center;">Me te shiturat gjate muajit Nentor</h1>
+        <table border="1" class="table" cellspacing='7' cellpadding="10">
+            <thead>
+                <th>Java</th>
+                <th>Ushqimi</th>
+                <th>Pija</th>
+                <th>Deserti</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Speca</td>
+                    <td>Fanta</td>
+                    <td>Tiramisu</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> Sallate Pule</td>
+                    <td id="bestSelling" style="background-color: crimson;">Fanta</td>
+                    <td>Oreo</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Flija</td>
+                    <td>Espresso</td>
+                    <td id="bestSelling" style="background-color: crimson;">Trileqe</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td id="bestSelling" style="background-color: crimson;">Speca</td>
+                    <td>Coca Cola</td>
+                    <td>Akullore</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br><br><br>
+
+    <div class="foods">
+        <ul class="foodList">
+            <h3 style="color:black">Llojet e ushqimeve </h3>
+            <li class="listItem">
+                <button class="accordion">Sallatat</button>
+                <ol class="innerList panel">
+                    <li><a href="#sallatPule">Sallat pule</a></li>
+                    <li><a href="#sallatShope">Sallat shope</a></li>
+                    <li>Sallat e gjelber me mish pule</li>
+                </ol>
+            </li>
+            <li class="listItem">
+                <button class="accordion">Paragjella</button>
+                <ol class="innerList panel">
+                    <li>Pomfrita</li>
+                    <li>Supe</li>
+                    <li>Pallaqinka</a></li>
+                </ol>
+            </li>
+            <li class="listItem">
+                <button class="accordion">Ushqimet Tradicionale</button>
+                <ol class="innerList panel">
+                    <li><a href="#Fli">Fli</a></li>
+                    <li>Qofte ne tave</a></li>
+                    <li>Speca me maze</li>
+                </ol>
+            </li>
+        </ul>
+
+        <ul class="foodList">
+            <h3 style="color: black;">Llojet e pijeve</h3>
+            <li class="listItem">
+                <button class="accordion">Pije freskuese</button>
+                <ol class="innerList">
+                    <li>Cocacola</li>
+                    <li>Fanta</li>
+                    <li>Sprite</li>
+                </ol>
+            </li>
+
+            <li class="listItem">
+                <button class="accordion">Pije te nxehta</button>
+                <ol class="innerList">
+                    <li>Makiato</li>
+                    <li>Espresso</li>
+                    <li>Nesscaffe</li>
+                    <li>Qaj</li>
+                </ol>
+            </li>
+
+        </ul>
+        <ul class="foodList">
+            <h3 style="color: black;">Desert</h3>
+            <li class="listItem">
+                <button class="accordion">Torte</button>
+                <ol class="innerList">
+                    <li>Trileqe</li>
+                    <li>Tiramisu</li>
+                    <li>Oreo</li>
+                </ol>
+            </li>
+            <li class="listItem">
+                <button class="accordion">Akullore</button>
+                <ol class="innerList">
+                    <li>Qokollade</li>
+                    <li>Vanille</li>
+                    <li>Dredhze</li>
+                </ol>
+            </li>
+
+
+        </ul>
+    </div>
+
+    <h2 id="ee" style="text-align: center;">Specialitetet ditore</h2>
+
+    <div class="dailyFoodWrapper">
+
+        <div class="specificFood">
+            <img width="400"
+                src="https://www.recipetineats.com/wp-content/uploads/2020/05/Pizza-Crust-without-yeast_5-SQ.jpg "
+                alt="">
+            <div style="width: 300px; margin:auto;">
+                <h3>Pica</h3>
+                <h4>Perberesit: </h4>
+                <dl>
+                    <li>Suxhuk</li>
+                    <li>Kerpudha</li>
+                    <li>Kaqkavall</li>
+                </dl>
+            </div>
+        </div>
+
+        <div class="specificFood" style="margin-top: 20px;">
+
+            <div style="width: 300px; margin:auto;">
+                <h3>Rizzoto</h3>
+                <h4>Perberesit:</h4>
+                <dl>
+                    <li>Oriz</li>
+                    <li>Mish i bardhe</li>
+            </div>
+            <img width="400" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/a2/09/de/chicken-rizotto.jpg"
+                alt="">
+        </div>
+
+        <div class="menuFoods">
+            <div class="foodCard" id="sallatPule">
+                <h3 style="text-align: center;">Sallat pule</h3>
+                <img height="300"
+                    src="https://healthyfitnessmeals.com/wp-content/uploads/2021/04/Southwest-chicken-salad-7.jpg" />
+            </div>
+
+            <div class="foodCard" id="sallatShope">
+                <h3 style="text-align: center;">Sallat shope</h3>
+                <img height="300" src="http://bwhotelgalla.com/wp-content/uploads/2020/07/IMG_6640.jpg" />
+            </div>
+
+            <div class="foodCard">
+                <h3 style="text-align: center;">Sallat e gjelber me mish pule</h3>
+                <img height="auto" src="https://agroweb.org/wp-content/uploads/2018/01/sallate-pule.jpg" />
+            </div>
+        </div>
+
+        <div class="specificFood" style="margin-top: 20px;">
+            <div class="f" id="Fli"></div>
+            <img width="400" src="https://gatimeshqiptare.com/wp-content/uploads/2021/03/Flija.png" alt="">
+            <div style="width: 300px; margin:auto;">
+                <h3>Fli</h3>
+                <h4>Perberesit:</h4>
+                <dl>
+                    <li>Brum</li>
+                    <li>Maze rugove</li>
+            </div>
+        </div>
+        
+        <div class="specificFood" style="margin-top: 20px;">
+            <div style="width: 300px; margin:auto;">
+                <h3>Qofte ne tave</h3>
+                <h4>Perberesit:</h4>
+                <dl>
+                    <li>Qofte shtepie</li>
+                    <li>Salce</li>
+            </div>
+            <img width="400" src="https://telegrafi.com/wp-content/uploads/2016/06/qofte.jpg" alt="">
+        </div>
+
+        <script type="text/javascript" src="elion.kuzhina.js"></script>
+    </div>
+    <div class="Drag">
+        <center>
+            <p>Ju lutem zgjedh ushqimin tuaj te preferuar dhe beje "drop" ne kutin e par kurse ne kutin e 2 ushqimin me
+                pak te preferuar!</p>
+
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+            <img id="drag1" src="images/pizza.png" draggable="true" ondragstart="drag(event)" id="drag1" width="200"
+                height="100">
+            <img id="drag2" src="images/salad.png" draggable="true" ondragstart="drag(event)" width="200" height="100">
+            <img id="drag3" src="images/ramen.png" draggable="true" ondragstart="drag(event)" width="200" height="100">
+
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </center>
+    </div>
+
+    <br><br>
+    <h3>Degjoni nje podcast rreth ushqimit</h3>
+    <audio controls muted>
+        <source src="audio1.mp3" type="audio/ogg">
+        <source src="audio1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio controls muted>
+        <source src="audio2.mp3" type="audio/ogg">
+        <source src="audio2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <h3>Ose shikoni disa video rreth ushqimeve</h3>
+    <iframe style="margin-bottom: 20px;" , width="560" height="315" src="https://www.youtube.com/embed/C0pLIjQG1q0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe style="margin-bottom: 20px;" , width="560" height="315" src="https://www.youtube.com/embed/f_k1eq6vAw4"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    
+    <div class="specialOffer">
+        <h3>Porosit tani dhe fito 20% zbritje ose provo fatin</h3>
+    </div>
+    <p>Ju lutem jep ni numer prej 5 deri në 10, Për të fituar zbritje:</p>
+<div class="zbritja"></div>
+    <input id="zbritje" type="text">
+    <button type="button" onclick="myFunction()">Provo fatin</button>
+    <p id="p01"></p>
+</div>
+    <script>
+        function myFunction() {
+          const message = document.getElementById("p01");
+          message.innerHTML = "";
+          let x = document.getElementById("zbritje").value;
+          try { 
+            if(x == "")  throw "Asgje";
+            if(isNaN(x)) throw "Nuk është numër";
+            x = Number(x);
+            if(x < 5)  throw "Numër i vogel";
+            if(x > 10)   throw "Numër shum i madh";
+            if(x==8) throw "Ju keni gjetur numrin";
+             if(x==6) throw "Nuk është numri i saktë";
+                 if(x==7) throw "Nuk është numri i saktë";
+                      if(x==9) throw "Nuk është numri i saktë";
+                           if(x==10) throw "Nuk është numri i saktë";
+                                if(x==5) throw "Nuk është numri i saktë";
+                 
+          }
+          catch(err) {
+            message.innerHTML = "Rezultati është: " + err;
+          }
+        }
+        </script>
+        
+
+
+    <div class="footer-container">
+        <div class="footer">
+
+            <div class="footer-heading footer-1">
+                <h2>Kontaktoni me ne</h2>
+                <a href='https://www.indeed.com/cmp/Le-Bernardin/reviews'>Pune</a>
+                <a href='Support'>Suporti</a>
+                <a href='Sponsorships'>Reklamo</a>
+                <a href='Terms of Service'>Kushtet e pordorimit</a>
+            </div>
+
+            <div class="footer-heading footer-2">
+                <h2>Rrjete sociale</h2>
+                <a href='https://www.instagram.com/lebernardinny/?hl=en' target="_blank">Instagram</a>
+                <a href='https://www.facebook.com/LeBernardin' target="_blank">Facebook</a>
+                <a href='https://www.youtube.com/results?search_query=le+bernardin+new+york' target="_blank">Youtube</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

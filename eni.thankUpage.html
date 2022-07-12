@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Porosia u pranua</title>
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="eni.css">
+    <title>Porosia u pranua me sukses</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#njoftimi").click(function () {
+                $("#surpriza").slideDown(3000);
+            });
+        });
+    </script>
+    <style>
+        #surpriza,
+        #njoftimi {
+            padding: 5px;
+            text-align: center;
+            background-color:#aca8a8;
+            border: solid 1px #c3c3c3;
+        }
+
+        #surpriza {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-image"
+        style="background-image: url(https://previews.123rf.com/images/golubovystock/golubovystock1801/golubovystock180100482/94111906-food-photography-art-gourmet-restaurant-dessert-on-white-background-concept.jpg);">
+    </div>
+
+    <nav class="topnav">
+        <a href="engjiaboutus.html">Rreth Nesh</a>
+        <a href="eni.loginFrom.html">eKuzhina</a>
+        <a href="elion.kuzhina.html">Kuzhina</a>
+        <a href="engjihome.html">Faqja Kryesore</a>
+
+        <svg height="45" width="300">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:white;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:black;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <ellipse cx="50" cy="35" rx="44" ry="26" fill="url(#grad1)" />
+            <text fill="#ffffff" font-size="30" font-family="Verdana" x="25" y="43">Le Bernardin</text>
+        </svg>
+    </nav>
+
+    <div class="text" style="top:30%">
+        <p style="font-weight: bold;font-size: 30px;"> Faleminderit per besimin tuaj !<br>Porosia juaj do te arrij se
+            shpejti </p>
+            <div id="njoftimi">Ne kemi nje surprize per ju</div>
+            <div id="surpriza"><p style="font-weight: normal, font-size=10px;"> Ju do te pranoni nje emblesire nga stafi yne per besimin
+                tuaj nder vite </p></div>
+        
+        <a href="engjihome.html" style="float: right;"><button class='buttonstyle1'>Kthehu ne faqen
+                kryesore</button></a>
+    </div>
+
+
+    <div class="sendEmail" style="font-size:medium;font-weight: lighter;">
+        <p>Keni ndonje sygjerim , ankese apo kerkese ?<br>Ju lutemi shkruani ne formen poshte per te na ndihmuar qe te
+            permirsohemi</p>
+        <form action="mailto:emailid@example.com" method="post" enctype="text/plain">
+            Sygjerimi juaj : <input type="text" size="70"><br><br>
+            <input class='buttonstyle1' type="submit" value="Dergo (via email)" style="float: right;">
+        </form>
+    </div>
+
+
+
+    <div class="footer-container">
+
+        <div class="footer">
+
+            <div class="footer-heading footer-1">
+                <h2>Kontaktoni me ne</h2>
+                <a href='https://www.indeed.com/cmp/Le-Bernardin/reviews'>Pune</a>
+                <a href='Support'>Suporti</a>
+                <a href='Sponsorships'>Reklamo</a>
+                <a href='Terms of Service'>Kushtet e pordorimit</a>
+            </div>
+
+            <div class="footer-heading footer-2">
+                <h2>Rrjete sociale</h2>
+                <a href='https://www.instagram.com/lebernardinny/?hl=en' target="_blank">Instagram</a>
+                <a href='https://www.facebook.com/LeBernardin' target="_blank">Facebook</a>
+                <a href='https://www.youtube.com/results?search_query=le+bernardin+new+york' target="_blank">Youtube</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

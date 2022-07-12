@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    margin: 0%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    -webkit-filter: blur(7px);
+    height: 100%;
+    background-size: cover;
+
+  }
+  
+  .text {
+    background-color: rgba(0,0,0, 0.2);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.1%;
+  }
+
+  .sendEmail{
+    background-color: rgba(0,0,0, 0.2);
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;}
+
+.buttonstyle1{
+  background-color: #aca9b1;
+  border-radius: 10px;
+  border: 2px;
+  color: #eeeeee;
+  text-align: center;
+  font-size: medium;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#canvas{
+  width:800px;
+  height:300px;
+  border:2px solid black;
+}

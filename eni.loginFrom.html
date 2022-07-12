@@ -1,0 +1,121 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="eni.css">
+    <script type="text/javascript" src="eni.js"></script>
+    <title>Kyquni ne llogarine tuaj</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("input").focus(function () {
+                $(this).css("background-color", "white");
+
+            });
+            $("input").blur(function () {
+                $(this).css("background-color", "lightblue");
+            });
+        });
+    </script>
+    
+    <style>
+        * {
+            font-weight: normal;
+        }
+
+        fieldset {
+            width: 400px;
+        }
+
+        .buttonplace {
+            text-align: center
+        }
+
+        .buttonStyle2 {
+            background-color: #d9d7db;
+            border-radius: 25px;
+            border: 1px;
+            color: #000000;
+            text-align: center;
+            font-size: medium;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-image"
+        style="background-image:url(https://www.sortiraparis.com/images/80/91874/582754-photos-le-cafe-de-l-homme.jpg)">
+    </div>
+
+    <nav class="topnav">
+        <a href="engjiaboutus.html">Rreth Nesh</a>
+        <a class="active" href="eni.loginFrom.html">eKuzhina</a>
+        <a href="elion.kuzhina.html">Kuzhina</a>
+        <a href="engjihome.html">Faqja Kryesore</a>
+    </nav>
+
+    <fieldset class="text">
+
+        <h1>Kyqu ne llogarine tuaj </h1>
+        <form action="eni.orderonline.html" name="login" onsubmit="return validateloginform()">
+            <p><label for="username"> Perdoruesi : <input type="text" name='username' placeholder="eni@gmail.com"
+                        required></label></p>
+            <p><label for="password"> Fjalekalimi : <input type="password" name='password' required></label></p>
+            <p><label for="rememberme"><input type="checkbox" name='rememberme'>Me mbaj mend</label></p>
+            <div class="buttonplace"> <input class='buttonstyle2' type="submit" value="Kyqu"></div>
+            <p>Nuk jeni antarsuar ende ? <a href="eni.signup.html" style='color:#d9d7db'>Klikoni ketu</a></p>
+        </form>
+
+    </fieldset>
+
+    <div class="footer-container">
+        <div class="footer">
+
+            <div class="footer-heading footer-1">
+                <h2>Kontaktoni me ne</h2>
+                <a href='https://www.indeed.com/cmp/Le-Bernardin/reviews' target="_blank">Pune</a>
+                <a href='Support' target="_blank">Suporti</a>
+                <a href='Sponsorships' target="_blank">Reklamo</a>
+                <a href='Terms of Service' target="_blank">Kushtet e pordorimit</a>
+            </div>
+
+            <div class="footer-heading footer-2">
+                <h2>Rrjete sociale</h2>
+                <a href='https://www.instagram.com/lebernardinny/?hl=en' target="_blank">Instagram</a>
+                <a href='https://www.facebook.com/LeBernardin' target="_blank">Facebook</a>
+                <a href='https://www.youtube.com/results?search_query=le+bernardin+new+york' target="_blank">Youtube</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function validateloginform() {
+            var name = document.login.username.value.toLowerCase();
+            var password = document.login.password.value.toLowerCase();
+
+            if (name in users) {
+                if (password == users[name]) {
+                    return true
+                }
+                else {
+                    alert("Ju lutem rishikoni fjalekalimin perseri")
+                    return false
+                }
+            }
+            else {
+                alert("Ju lutem rishikoni emailin perseri");
+                return false;
+            }
+        }  
+    </script>
+
+</body>
+
+</html>

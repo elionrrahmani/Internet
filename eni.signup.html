@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="eni.css">
+    <script type="text/javascript" src="eni.js"></script>
+    <title>Regjistrimi</title>
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 2%;
+        }
+    </style>
+
+    <script type="text/javascript">
+        alert("Te gjitha te dhenat do te ruhen ne databazen tone")
+    </script>
+</head>
+
+<body>
+
+    <nav class="topnav">
+        <a href="engjiaboutus.html">Rreth Nesh</a>
+        <a class="active" href="eni.loginFrom.html">eKuzhina</a>
+        <a href="elion.kuzhina.html">Kuzhina</a>
+        <a href="engjihome.html">Faqja Kryesore</a>
+    </nav>
+
+    <p> <b>Mire se vini ne eKuzhina.</b> Ju lutemi qe ti plotesoni me kujdes te gjitha te dhenat e meposhtme per te pasur qasje ne sherbimet online te cilat i ofrojme.</p>
+
+    <div class='grid-container'>
+        <div class='info' style="background-image: linear-gradient(rgb(173, 136, 136) , rgb(123, 123, 199));">
+
+            <form action="eni.signedup.html" name="signup" onsubmit="return validateData()" autocomplete="on">
+
+                <fieldset style="margin: 20px;padding: auto;">
+                    <legend>Te dhenat personale</legend>
+                    <p> <input type='text' size='30' placeholder="Emri" autofocus='on'>
+                        <input type='text' size='30' placeholder="Mbiemi" required>
+                    </p>
+                    <p> <input type='email' id="email" size='30' placeholder="test@gmail.com" maxlength="30">
+                        <input type='password' id='password' size='30' placeholder="Fjalekalimi" required>
+                    </p>
+                    <p> <input type='text' size='30' placeholder="Adresa">
+                        <input type='tel' size='30' placeholder="Numri kontaktues" multiple>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend> Te dhenat bankare </legend>
+                    <p> Zgjedh Banken
+                        <select name="bankat" id="bankat">
+                            <option value="PCB">ProCredit Bank</option>
+                            <option value="BKT">Banka Kombetare Tregtare</option>
+                            <option value="BPP">Banka Per Biznes</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type='number' size='25' placeholder="Numri i karteles">
+                        <input type='number' size='10' id='pin' placeholder="PIN">
+                    </p>
+                </fieldset>
+
+                <p> <label for="accept"><input type="checkbox" , name='accept' required>Pranoj kushtet e privatesise</label><br><br>
+                    <label for="button"> <button type="submit" name="signup"> Regjistrohu</label>
+                </p>
+            </form>
+
+        </div>
+
+        <div class='photos'>
+            <img src="https://archello.s3.eu-central-1.amazonaws.com/images/2020/02/29/Secret-Garden-Theme-Restaurant-Design-4.1582983939.8563.jpg"
+                alt="Foto nga restauranti jone" height="800px" width="600px">
+        </div>
+    </div>
+
+    <canvas id="myCanvas" width="1300" height="100" style="border:1px solid #d3d3d3;">Shfletuesi juaj eshte i vjeter.</canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        var grd = ctx.createLinearGradient(0, 0, 1500, 0);
+        grd.addColorStop(0, "blue");
+        grd.addColorStop(1, "white");
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, 1500, 100);
+    </script>
+<script src="main.js"></script>
+</body>
+</html>

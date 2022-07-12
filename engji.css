@@ -1,0 +1,63 @@
+
+@font-face {
+    font-family:Pushster;
+    src: url(Font/Pushster.ttf);
+  }
+
+
+
+
+@font-face {
+    font-family:Lobster-Regular;
+    src: url(Font/Lobster-Regular.ttf);
+  }
+  .font{
+      font-family:Lobster-Regular;
+  }
+
+.Video{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+   
+    color:white;
+    margin-bottom:100px;
+    padding:200px 0px;
+    position:relative;
+    overflow: hidden;
+    min-height: 50vh;
+}
+.video-bg{
+      position:absolute;
+      z-index: -1;
+      top:0;
+      left:0;
+      min-width: 100%;
+      min-height: 100%;
+
+}
+.Video1{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+   
+    color:white;
+ 
+    position:relative;
+    overflow: hidden;
+    min-height: 50vh;
+}
+.video-bg1{
+    position:relative;
+    z-index: -1;
+    top:0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+
+

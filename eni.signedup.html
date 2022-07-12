@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="eni.css">
+    <title>Mirsevini ne familjen tone</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#surpriza").click(function () {
+                $(".text").hide()
+                $(".bg-image").hide()
+
+                $("#div1").fadeIn(5000, function(){
+                    alert("URIME Keni fituar 10 Euro Gift Card")
+                })
+            });
+        });
+    </script>
+
+    <style>
+        #div1{
+            z-index: 1;
+            background-color: rgba(21, 143, 21, 0.76);
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="topnav">
+        <a href="engjiaboutus.html">Rreth Nesh</a>
+        <a href="eni.loginFrom.html">eKuzhina</a>
+        <a href="elion.kuzhina.html">Kuzhina</a>
+        <a class="active" href="engjihome.html">Faqja Kryesore</a>
+
+        <svg height="45" width="300">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:white;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:black;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <ellipse cx="50" cy="35" rx="44" ry="26" fill="url(#grad1)" />
+            <text fill="#ffffff" font-size="30" font-family="Verdana" x="25" y="43">Le Bernardin</text>
+        </svg>
+    </nav>
+
+    <div class="bg-image"
+        style="background-image: url(https://image.shutterstock.com/image-illustration/all-done-handwritten-on-white-260nw-1963490920.jpg);">
+    </div>
+
+    <div class='text' style="top: 20%;">
+        <p> Tani keni qasje ne te gjitha sherbimet elektronike tonat. Faleminderit per besimin</p>
+        <div>
+            <a href="engjihome.html"> <button class='buttonstyle1'>Kthehuni ne faqen kryesore</button> </a>
+            <a href="eni.orderonline.html" style="float:right" ><button class='buttonstyle1'>Porositni online</button></a>
+           <center>        <button class="buttonstyle1" id="surpriza"> Surprize</button></center>
+        </div>
+    </div>
+    
+    <div id="div1" ></div><br>
+
+</body>
+
+</html>
